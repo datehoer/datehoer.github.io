@@ -1,9 +1,9 @@
-## Welcome to GitHub Pages
+## 点滴记录，分享我的插件旅程！
 
 我的世界服务器紫禁之巅QQ群173165583
 
 欢迎加入！！
-### Markdown
+### 记录下来每一刻！
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
