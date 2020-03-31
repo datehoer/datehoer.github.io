@@ -1,0 +1,5 @@
+name:  Handcallplugin
+main:  Call.Handcallplugin
+version:  1.0
+api-version:  1.12
+commands: 
