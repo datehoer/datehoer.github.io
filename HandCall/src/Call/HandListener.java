@@ -21,32 +21,32 @@ public final class HandListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         // Your code here...
-    	event.setJoinMessage("ÎÒÊÇÔüÔü»Ô"+event.getPlayer().getName());
+    	event.setJoinMessage("æˆ‘æ˜¯æ¸£æ¸£è¾‰"+event.getPlayer().getName());
         Player player = event.getPlayer(); // The player who joined
         PlayerInventory inventory = player.getInventory(); // The player's inventory
         ItemStack itemstack = new ItemStack(Material.DIAMOND, 64); // A stack of diamonds
         inventory.addItem(itemstack); // Adds a stack of diamonds to the player's inventory
 
-//        Location loc = player.getLocation(); //»ñÈ¡Íæ¼Ò×ø±ê
-//        World world = player.getWorld();  //»ñÈ¡Íæ¼ÒËùÔÚÊÀ½ç
-//        Sheep sheep = world.spawn(loc,Sheep.class);  //Éú³ÉÒ»Ö»ÑòÔÚËùÔÚÎ»ÖÃ
-//        sheep.setColor(DyeColor.WHITE);  //ÑòµÄÑÕÉ«
-//        sheep.setHealth(1);  //ÑòµÄÑªÁ¿
+//        Location loc = player.getLocation(); //è·å–ç©å®¶åæ ‡
+//        World world = player.getWorld();  //è·å–ç©å®¶æ‰€åœ¨ä¸–ç•Œ
+//        Sheep sheep = world.spawn(loc,Sheep.class);  //ç”Ÿæˆä¸€åªç¾Šåœ¨æ‰€åœ¨ä½ç½®
+//        sheep.setColor(DyeColor.WHITE);  //ç¾Šçš„é¢œè‰²
+//        sheep.setHealth(1);  //ç¾Šçš„è¡€é‡
         
         
     }
     @EventHandler
     public void onInteract(PlayerInteractEvent event) {
-         if(event.getMaterial()==Material.DIAMOND) {    //ÅĞ¶ÏÊÖÖĞÊÇ·ñÓĞDIAMOND
-        	 if(event.getAction().equals(Action.RIGHT_CLICK_AIR)) {  //ÅĞ¶ÏÊÇ·ñÓÒ»÷
+         if(event.getMaterial()==Material.DIAMOND) {    //åˆ¤æ–­æ‰‹ä¸­æ˜¯å¦æœ‰DIAMOND
+        	 if(event.getAction().equals(Action.RIGHT_CLICK_AIR)) {  //åˆ¤æ–­æ˜¯å¦å³å‡»
         		 Player player=event.getPlayer();
         		 Location loc = player.getLocation();
         		 World world = player.getWorld();
 //        		 Sheep sheep0 = world.spawn(loc,Sheep.class);
-//        		 Random r = new Random();   //Ëæ»úº¯Êı
-//        		 int i = r.nextInt(17);  //¶¨ÒåiÎªËæ»úº¯Êı¹²17¸ö
-//        		 sheep0.setColor(DyeColor.values()[i]);  // ÑÕÉ«ÎªÊı×éÄÚµÄi£¬17¸öÁ¿ 
-//        		 sheep0.setCustomName("666");  // Ãû×ÖÎª666
+//        		 Random r = new Random();   //éšæœºå‡½æ•°
+//        		 int i = r.nextInt(DyeColor.values().length);  //å®šä¹‰iä¸ºéšæœºå‡½æ•°å…±17ä¸ªï¼Œæœ¬æ¥æ˜¯17çš„ï¼Œåæ¥æ”¹æˆDyeColor.values().length
+//        		 sheep0.setColor(DyeColor.values()[i]);  // é¢œè‰²ä¸ºæ•°ç»„å†…çš„iï¼Œ17ä¸ªé‡ 
+//        		 sheep0.setCustomName("666");  // åå­—ä¸º666
         		 EnderDragon ed = world.spawn(loc,EnderDragon.class);
         		 ed.setCustomName("MyDog");
         	 }
