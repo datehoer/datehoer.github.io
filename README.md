@@ -5,8 +5,7 @@
 欢迎加入！！
 ### 记录下来每一刻！
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+使用java语言！
 ```markdown
 Syntax highlighted code block
 
